@@ -1,0 +1,22 @@
+/********************************************************************************************************************************
+8) A prefeitura do Rio de Janeiro abriu uma linha de crédito para os funcionários estatutários. O valor máximo da prestação não poderá ultrapassar 30% do salário bruto. Fazer um algoritmo que permita entrar com o salário bruto e o valor da prestação e informar se o empréstimo pode ou não ser concedido.
+*********************************************************************************************************************************/
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    float salbruto, prestacao, porcent;
+    printf("Informe o salario bruto: ");
+    scanf("%f",&salbruto);
+    printf("Informe o valor da prestacao: ");
+    scanf("%f",&prestacao);
+    porcent = salbruto * 0.30;
+    if (prestacao > porcent)
+        printf("\nEmprestimo não pode ser concedido\n");
+    else
+        printf("\nEmprestimo pode ser concedido");
+    system("PAUSE");
+    return 0;
+}

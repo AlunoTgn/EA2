@@ -1,0 +1,24 @@
+/********************************************************************************************
+5)Entrar com um número e imprimir uma das mensagens: é múltiplo de 3 ou não é múltiplo de 3.
+*********************************************************************************************/
+
+#include <stdio.h>
+#include <stdlib.h>
+int main()
+{
+
+    int x, result;
+    printf("Entre com um numero: ");
+    scanf("%d", &x);
+    result = x % 3;
+    if (result == 0)
+    {
+        printf("É multiplo de 3\n");
+    }
+    else
+    {
+        printf("Não é multiplo de 3\n");
+    }
+
+    return 0;
+}

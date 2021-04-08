@@ -1,0 +1,25 @@
+/*******************************************************************************************************************************
+4)Construir um algoritmo que leia dois números e efetue a adição. Caso o valor somado seja maior que 20, este deverá ser apresentado somando-se a ele mais 8; caso o valor somado seja menor ou igual a 20, este deverá ser apresentado subtraindo-se 5.
+*********************************************************************************************************************************/
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+
+    int a, b, soma;
+    printf("Insira o valor de A: ");
+    scanf("%d", &a);
+    printf("Insira o valor de B: ");
+    scanf("%d", &b);
+    soma = a + b;
+    if(soma > 20)
+        soma = soma + 8;
+    else
+        soma = soma - 5;
+
+    printf("Valor resultante: %d\n", soma);
+
+    system("pause");
+    return 0;
+}

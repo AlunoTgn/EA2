@@ -1,0 +1,21 @@
+/****************************************************************************************************************
+7)Entrar com um número e informar se ele é divisível por 10, por 5, por 2 ou se não é divisível por nenhum deles.
+*****************************************************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+
+    int numero;
+    printf("Entre com um valor positivo: ");
+    scanf("%d", &numero);
+    if (numero % 10 == 0 && numero%5 == 0 && numero % 2 == 0)
+        printf("O numero eh divisivel por 10, 5 e 2\n");
+    else
+        printf("O numero nao eh divisivel por nenhum desses 10, 5 e 2\n");
+
+    return 0;
+}
+
+

@@ -1,0 +1,28 @@
+/**************************************************************
+2)Ler um número e imprimir se ele é positivo, negativo ou nulo.
+***************************************************************/
+
+#include<stdio.h>
+int main ()
+{
+
+    int x;
+
+    printf("Digite um numero: ");
+    scanf("%d", &x);
+
+    if(x > 0)
+    {
+        printf("%d e positivo", x);
+    }
+    else if(x < 0)
+    {
+        printf("%d e negativo", x);
+    }
+    else
+    {
+        printf("%d e nulo", x);
+    }
+
+    return 0;
+}
